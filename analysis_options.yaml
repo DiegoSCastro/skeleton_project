@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+    non_constant_identifier_names: ignore
+
+linter:
+
+  rules:
+    - prefer_relative_imports
+    - always_declare_return_types
+    - null_check_on_nullable_type_parameter
+    - prefer_single_quotes
