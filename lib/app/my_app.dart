@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [],
+      providers: const [],
       child: MaterialApp(
         //Todo: Rename App
         title: 'MyApp',

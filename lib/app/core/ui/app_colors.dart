@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColors {
-  static AppColors? _instance;
-  AppColors._();
-
-  static AppColors get i {
-    _instance ??= AppColors._();
-    return _instance!;
-  }
-}
-
-extension AppColorsExtensions on BuildContext {
-  AppColors get color => AppColors.i;
+sealed class AppColors {
+  static const white = Color(0xFFFFFFFF);
+  static const black = Color(0xFF000000);
 }

@@ -1,2 +1,1 @@
-//GENERATED BARREL FILE
-export './home/home.dart';
+export 'home/home.dart';

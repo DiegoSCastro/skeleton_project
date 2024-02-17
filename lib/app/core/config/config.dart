@@ -1,2 +1,1 @@
-//GENERATED BARREL FILE
-export './env/env.dart';
+export 'env/env.dart';

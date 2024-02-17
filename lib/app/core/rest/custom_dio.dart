@@ -9,12 +9,12 @@ class CustomDio extends DioForNative {
   CustomDio()
       : super(
           BaseOptions(
-            baseUrl: AppEnv.i['BASE_URL'] ?? '',
-            connectTimeout: Duration(
-              milliseconds: int.tryParse(AppEnv.i['CONNECT_TIMEOUT'] ?? '10000') ?? 10000,
+            baseUrl: AppEnv.baseUrl,
+            connectTimeout: const Duration(
+              milliseconds: AppEnv.connectTimeout,
             ),
-            receiveTimeout: Duration(
-              milliseconds: int.tryParse(AppEnv.i['RECEIVE_TIMEOUT'] ?? '30000') ?? 30000,
+            receiveTimeout: const Duration(
+              milliseconds: AppEnv.receiveTimeout,
             ),
           ),
         ) {
