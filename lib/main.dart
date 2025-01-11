@@ -4,6 +4,6 @@ import 'app/app.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  initServiceLocator();
+  initInjection();
   runApp(const MyApp());
 }
