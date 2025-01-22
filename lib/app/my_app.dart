@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'app.dart';
 
@@ -9,15 +8,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: const [],
-      child: MaterialApp(
-        //Todo: Rename App
-        title: 'MyApp',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeConfig.theme,
-        home: const HomePage(),
-      ),
+    return MaterialApp(
+      //Todo: Rename App
+      title: 'MyApp',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeConfig.theme,
+      home: const HomePage(),
     );
   }
 }
