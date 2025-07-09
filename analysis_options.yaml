@@ -1,14 +1,18 @@
 include: package:flutter_lints/flutter.yaml
 analyzer:
-  errors:
-    invalid_annotation_target: ignore
-    non_constant_identifier_names: ignore
+  exclude:
+    - "**.g.dart"
+
+formatter:
+  page_width: 100
 
 linter:
-
   rules:
-    - always_declare_return_types
-    - directives_ordering
-    - null_check_on_nullable_type_parameter
-    - prefer_relative_imports
-    - prefer_single_quotes
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_declarations: true
+    always_declare_return_types: true
+    directives_ordering: true
+    null_check_on_nullable_type_parameter: true
+    prefer_relative_imports: true
+    prefer_single_quotes: true
