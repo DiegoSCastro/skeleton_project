@@ -1,0 +1,13 @@
+{
+    "app": {
+        "title": "Meine App"
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "language": "Sprache",
+        "theme": "Design",
+        "dark_mode": "Dunkler Modus",
+        "system": "System",
+        "light_mode": "Heller Modus"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "app": {
+        "title": "برنامه من"
+    },
+    "settings": {
+        "title": "تنظیمات",
+        "language": "زبان",
+        "theme": "تم",
+        "dark_mode": "حالت تاریک",
+        "system": "سیستم",
+        "light_mode": "حالت روشن"
+    }
+}

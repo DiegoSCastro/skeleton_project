@@ -7,24 +7,14 @@ class CustomDio extends DioForNative {
   final _authInterceptor = const Interceptor();
 
   CustomDio()
-      : super(
-          BaseOptions(
-            baseUrl: AppEnv.baseUrl,
-            connectTimeout: const Duration(
-              milliseconds: AppEnv.connectTimeout,
-            ),
-            receiveTimeout: const Duration(
-              milliseconds: AppEnv.receiveTimeout,
-            ),
-          ),
-        ) {
-    interceptors.add(
-      LogInterceptor(
-        requestBody: true,
-        responseBody: true,
-        requestHeader: true,
-      ),
-    );
+    : super(
+        BaseOptions(
+          baseUrl: AppEnv.baseUrl,
+          connectTimeout: const Duration(milliseconds: 5000),
+          receiveTimeout: const Duration(milliseconds: 10000),
+        ),
+      ) {
+    interceptors.add(LogInterceptor(requestBody: true, responseBody: true, requestHeader: true));
   }
 
   CustomDio auth() {

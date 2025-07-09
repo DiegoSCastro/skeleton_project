@@ -1,0 +1,13 @@
+{
+    "app": {
+        "title": "האפליקציה שלי"
+    },
+    "settings": {
+        "title": "הגדרות",
+        "language": "שפה",
+        "theme": "ערכת נושא",
+        "dark_mode": "מצב כהה",
+        "system": "מערכת",
+        "light_mode": "מצב בהיר"
+    }
+}

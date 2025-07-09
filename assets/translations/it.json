@@ -1,0 +1,13 @@
+{
+    "app": {
+        "title": "La mia app"
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "language": "Lingua",
+        "theme": "Tema",
+        "dark_mode": "Modalità scura",
+        "system": "Sistema",
+        "light_mode": "Modalità chiara"
+    }
+}

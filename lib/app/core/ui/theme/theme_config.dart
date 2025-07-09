@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ThemeConfig {
-  ThemeConfig._();
-
+sealed class ThemeConfig {
   static final theme = ThemeData(
-    useMaterial3: true,
     colorScheme: ColorScheme.fromSeed(
-      seedColor: Colors.blue,
+      seedColor: const Color(0xFF2F80ED),
+      brightness: Brightness.light,
+    ),
+  );
+
+  static final darkTheme = ThemeData(
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: const Color(0xFF2F80ED),
+      brightness: Brightness.dark,
     ),
   );
 }
